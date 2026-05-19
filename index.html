@@ -12,6 +12,8 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -29,16 +31,17 @@
 
         <!-- LOGO -->
         <a href="#" class="navbar-brand-text text-decoration-none">
-          <img src="Media/BS_logo.svg" alt="BangaloreStudy Logo" class="navbar-logo" style="height: 40px; width: auto;">
+          <img src="Media/BS_logo.svg" alt="BangaloreStudy Logo" class="navbar-logo" style="height: 50px; width: auto;">
         </a>
 
         <!-- NAV LINKS -->
         <ul class="navbar-links d-none d-lg-flex">
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About MRADC</a></li>
-          <li><a href="#highlights">Highlights & Infra</a></li>
-          <li><a href="#bds">BDS @ MRADC</a></li>
           <li><a href="#why">Why Us</a></li>
+          <li><a href="#bds">BDS Course</a></li>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#top-colleges">Top Colleges</a></li>
           <li><a href="#faq">FAQs</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -71,26 +74,27 @@
     <div class="hero-shape shape2"></div>
     <div class="container position-relative" style="z-index:2;">
       <div class="row align-items-center g-5">
-        <div class="col-lg-8">
-          <div class="hero-tag">✦ 2025-26 Admissions Open</div>
+        <div class="col-lg-7">
+          <div class="hero-tag text-white"> Admissions Open for 2026-27</div>
           <h1 class="hero-title">
-            BDS Admission<br>in <span class="accent">Karnataka</span><br>
-            <span class="line2">2025–26</span>
+            BDS Admissions Karnataka in <span class="accent"></span><br>
+            <span class="line2">2026–27</span>
           </h1>
-          <p class="hero-sub">Join Top Dental Colleges in Karnataka with Low BDS Course Fees. Explore complete guidance
-            on BDS eligibility criteria, admission process, and counselling.</p>
+          <p class="hero-sub">Find the best BDS colleges in Bangalore and Karnataka with detailed <br> guidance on
+            eligibility, admission procedures, and counselling.</p>
           <div class="hero-btns d-flex flex-wrap gap-3">
             <a href="#apply" class="btn-primary-custom">
-              <i class="fas fa-calendar-check"></i> Book Your Session
+              <i class="fas fa-calendar-check"></i>Connect With Our Experts
             </a>
-            <!-- <a href="#colleges" class="btn-ghost-custom">
-            <i class="fas fa-university"></i> View Colleges
-          </a> -->
+            <a href="#colleges" class="btn-ghost-custom">
+              <i class="fas fa-university"></i> Explore Course ->
+            </a>
           </div>
         </div>
-        <div class="col-lg-4" id="apply">
+        <div class="col-lg-5" id="apply">
           <div class="hero-form-card">
-            <div class="form-title-small">Get Free Admission Guidance</div>
+            <div class="form-title-small">Fill Out the Form & Get Assistance With the 2026-27 BDS Admission Process
+            </div>
             <!-- <div class="form-sub-small">Fill in the details and get assistance on the BDS Admission Process for AY
               2025-26.</div> -->
             <div class="mb-3">
@@ -160,7 +164,7 @@
               </select>
             </div> -->
             <button class="btn-teal w-100 justify-content-center" onclick="handleSubmit(this)">
-              <i class="fas fa-paper-plane"></i> Submit — Get Free Guidance
+              <i class="fas fa-paper-plane"></i> Submit
             </button>
           </div>
         </div>
@@ -174,18 +178,18 @@
       <div class="stats-bar-inner">
         <div class="stat-item">
           <div class="stat-num"><span class="count-up" data-target="20">0</span>+</div>
-          <div class="stat-label">Top Dental Colleges</div>
+          <div class="stat-label">Dental Colleges in Karnataka</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num"><span class="count-up" data-target="5">0</span> <span>Yrs</span></div>
-          <div class="stat-label">Course Duration</div>
+          <div class="stat-num"><span class="count-up" data-target="5">0</span> Yrs</div>
+          <div class="stat-label">Years Course Duration</div>
         </div>
         <div class="stat-item">
           <div class="stat-num">NEET</div>
           <div class="stat-label">Entrance Exam Required</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">50<span>%</span></div>
+          <div class="stat-num"><span class="count-up" data-target="50">0</span>%</div>
           <div class="stat-label">Min. PCB Aggregate</div>
         </div>
       </div>
@@ -193,7 +197,7 @@
   </div>
 
   <!-- WHY US -->
-  <section class="why-us" id="whyus">
+  <section class="why-us" id="whyus" style="margin-top: 8rem !important;">
     <div class="container-fluid">
       <div class="text-center mb-5 reveal">
         <div class="section-tag">✦ Why Choose Us</div>
@@ -205,26 +209,9 @@
             <div class="why-icon-wrap">
               <img src="icons/graduate-cap.svg" alt="Icon" class="why-icon-img">
             </div>
-            <style>
-              .why-icon-wrap {
-                width: 80px;
-                height: 80px;
-                border-radius: 18px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: rgba(0, 150, 180, 0.08);
-              }
-
-              .why-icon-img {
-                width: 62px;
-                height: 62px;
-                object-fit: contain;
-              }
-            </style>
-            <h4>Admission to Top Dental Colleges</h4>
-            <p>Qualified NEET-UG? Get information about BDS admission criteria in the top BDS colleges in Karnataka and
-              the best BDS colleges in Bangalore.</p>
+            <h4>Direct Admission to Top Dental Colleges</h4>
+            <p>Qualified NEET-UG? Secure a BDS seat at leading dental colleges in Karnataka, especially in Bangalore,
+              through our streamlined direct admission guidance.</p>
           </div>
         </div>
         <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.2s">
@@ -232,9 +219,9 @@
             <div class="why-icon-wrap">
               <img src="icons/fee.svg" alt="Icon" class="why-icon-img">
             </div>
-            <h4>Low BDS Course Fees Packages</h4>
-            <p>Curious about BDS course fees? Connect with our experts to know about BDS course duration and fees, and
-              secure a seat in any low-fee BDS college in Karnataka.</p>
+            <h4>Fee Guidance</h4>
+            <p>Get detailed insights into BDS course fees, including management quota and NRI quota fee structures
+              across top dental colleges in Karnataka with expert assistance.</p>
           </div>
         </div>
         <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.3s">
@@ -242,9 +229,9 @@
             <div class="why-icon-wrap">
               <img src="icons/steps.svg" alt="Icon" class="why-icon-img">
             </div>
-            <h4>Step-by-Step Admission Assistance</h4>
-            <p>From registration and choice filling to seat allotment and beyond, we provide complete guidance
-              throughout the BDS counselling process.</p>
+            <h4>NEET Counselling</h4>
+            <p>We provide complete support throughout the BDS counselling process, from registration and choice filling
+              to seat allotment and post-allotment guidance.</p>
           </div>
         </div>
         <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.4s">
@@ -252,9 +239,10 @@
             <div class="why-icon-wrap">
               <img src="icons/diploma.svg" alt="Icon" class="why-icon-img">
             </div>
-            <h4>Scholarship for BDS Students</h4>
-            <p>High BDS course fees shouldn't stop your dream. Reach out to us for details about the exclusive
-              Scholarship for BDS students!</p>
+            <h4>Scholarships</h4>
+            <p>We help students explore institutional, government, and private scholarship opportunities for BDS
+              courses, making quality dental education in Karnataka more accessible despite high tuition costs.
+            </p>
           </div>
         </div>
       </div>
@@ -267,14 +255,23 @@
       <div class="row align-items-center g-5">
         <div class="col-lg-6 reveal-left">
           <div class="section-tag">✦ BDS Course Details</div>
-          <div class="divider"></div>
-          <h2 class="section-title mb-4">BDS Course <span class="accent-g">Details</span></h2>
-          <p class="section-desc mb-4">The Bachelor of Dental Surgery (BDS) undergraduate course integrates theoretical
-            knowledge of diagnosis with practical skills necessary to treat and prevent oral ailments. The curriculum
-            prepares students to learn dental procedures, understand usage of dental equipment, develop work ethics, and
-            follow legal aspects of the dental world.</p>
-          <p class="section-desc">This shapes them into healthcare professionals who can make a real difference in the
-            world of dentistry.</p>
+
+          <h2 class="section-title mb-4">BDS <span class="accent-g">Course</span></h2>
+          <p class="section-desc mb-4">The field of dentistry plays a crucial role in modern healthcare by promoting
+            oral health and treating dental conditions through advanced clinical techniques and specialized care. It is
+            a rapidly growing profession that blends medical science, precision, and patient care, offering students the
+            opportunity to build a rewarding career in the healthcare sector. Across Karnataka, several reputed
+            institutions offer professional dental education with the infrastructure and clinical exposure needed for
+            aspiring dentists.
+            <br>
+            Bachelor of Dental Surgery (BDS) is the foundational UG programme that equips students with in-depth
+            theoretical knowledge and practical training in oral healthcare, diagnosis, treatment procedures, and
+            patient management. For students planning to pursue BDS after qualifying NEET, having a clear understanding
+            of the course, eligibility criteria, and admission process is essential to making an informed decision.
+
+          </p>
+          <!-- <p class="section-desc">This shapes them into healthcare professionals who can make a real difference in the
+            world of dentistry.</p> -->
         </div>
         <div class="col-lg-6 reveal-right">
           <table class="detail-table">
@@ -298,9 +295,10 @@
               <th>BDS Eligibility Criteria</th>
               <td>
                 <ul class="ps-3 mb-0" style="font-size:0.86rem;color:var(--muted);">
-                  <li style="margin-bottom:5px;">Passed 10+2 / 2nd PU with English and min. 50% aggregate in PCB</li>
-                  <li style="margin-bottom:5px;">Qualified NEET-UG entrance exam</li>
-                  <li>Must be 17 years as of December 31st in the year of admission</li>
+                  <li style="margin-bottom:5px;">Passed 10+2 / 2nd PU with English and minimum 50% aggregate in PCB</li>
+                  <li style="margin-bottom:5px;">Qualified NEET-UG entrance exam
+                  </li>
+                  <li>Must be 17 years of age as of December 31st in the year of admission</li>
                 </ul>
               </td>
             </tr>
@@ -318,150 +316,595 @@
   <section class="cta-band">
     <div class="container position-relative" style="z-index:2;">
       <div class="reveal">
-        <h2>Step into the World of Smiles and Precision!</h2>
-        <p>Know all about the BDS Counselling Process 2025-26, Schedules, Seat Matrix, & More.</p>
+        <h2>Build a Future That Creates Confident Smiles</h2>
+        <p>Access expert guidance on BDS counselling 2026–27, important dates, seat matrix updates, and admission
+          support.</p>
         <a href="#apply" class="btn-primary-custom mx-auto">
-          <i class="fas fa-comments"></i> Connect with our Experts
+          <i class="fas fa-comments"></i> Connect with Our Experts
         </a>
       </div>
     </div>
   </section>
+  <section class="syllabus-section">
 
-  <!-- SYLLABUS -->
-  <section class="syllabus-section" id="syllabus">
-    <div class="container">
+    <!-- HEADER -->
+    <div class="syl-header reveal">
       <div class="text-center mb-5 reveal">
-        <div class="section-tag">✦ Academic Curriculum</div>
+        <div class="section-tag">✦ Why Choose Us</div>
         <h2 class="section-title">BDS <span class="accent-g">Syllabus</span></h2>
-        <p class="section-desc mx-auto mt-3">The BDS syllabus in India is structured to cover all essential aspects of
-          dental health and treatment. The five-year programme includes four years of academic learning followed by a
-          one-year compulsory rotatory internship.</p>
+        <p class="section-desc mb-4">The BDS syllabus in India is structured to cover all essential aspects of dental
+          health and treatment. The five-year programme includes four years of academic learning followed by a one-year
+          compulsory rotatory internship.
+        </p>
       </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <div class="syllabus-year reveal">
-            <div class="syl-header" onclick="toggleSyl(this)">
-              <div class="d-flex align-items-center gap-3">
-                <span class="syl-year-badge">Year 1</span>
-                <span class="syl-title">Foundation Sciences</span>
-              </div>
-              <i class="fas fa-chevron-down syl-icon open"></i>
-            </div>
-            <div class="syl-body show">
-              <div class="syl-item">General Human Anatomy</div>
-              <div class="syl-item">General Human Physiology and Biochemistry, Nutrition and Dietetics</div>
-              <div class="syl-item">Dental Anatomy, Embryology & Oral Histology</div>
-            </div>
+    </div>
+
+
+
+    <!-- YEAR 1 & 2 -->
+    <p class="row-label reveal" style="transition-delay:0.12s">Academic Years</p>
+
+    <div class="grid-2 reveal" style="transition-delay:0.16s">
+
+      <div class="scard">
+        <div class="scard-head">
+          <!-- <span class="duration-pill">First Year</span> -->
+          <h3 class="scard-title"><i class="bi bi-1-circle-fill"></i> First Year</h3>
+        </div>
+        <div class="scard-body">
+          <div class="scard-item"><span class="dot"></span><span class="item-text">General Human Anatomy including
+              Embryology and Histology</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">General Human Physiology and
+              Biochemistry, Nutrition and Dietetics</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Dental Anatomy, Embryology and Oral
+              Histology</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Dental Materials</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Pre-clinical Prosthodontics and Crown
+              &amp; Bridge</span></div>
+        </div>
+      </div>
+
+      <div class="scard">
+        <div class="scard-head">
+
+          <h3 class="scard-title"><i class="bi bi-2-circle-fill"></i> Second Year</h3>
+        </div>
+        <div class="scard-body">
+          <div class="scard-item"><span class="dot"></span><span class="item-text">General Pathology and
+              Microbiology</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">General and Dental Pharmacology and
+              Therapeutics</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Dental Materials</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Pre-clinical Conservative
+              Dentistry</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Pre-clinical Prosthodontics and Crown
+              &amp; Bridge</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Oral Pathology &amp; Oral
+              Microbiology</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- YEAR 3 & 4 — side by side -->
+    <div class="grid-2 mb-section reveal" style="transition-delay:0.2s">
+
+      <div class="scard">
+        <div class="scard-head">
+          <h3 class="scard-title"><i class="bi bi-3-circle-fill"></i> Third Year</h3>
+        </div>
+        <div class="scard-body">
+          <div class="scard-item"><span class="dot"></span><span class="item-text">General Medicine</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">General Surgery</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Oral Pathology and Oral
+              Microbiology</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Conservative Dentistry and
+              Endodontics</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Oral &amp; Maxillofacial
+              Surgery</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Oral Medicine and Radiology</span>
           </div>
-          <div class="syllabus-year reveal" style="transition-delay:0.1s">
-            <div class="syl-header" onclick="toggleSyl(this)">
-              <div class="d-flex align-items-center gap-3">
-                <span class="syl-year-badge">Year 2</span>
-                <span class="syl-title">Pre-Clinical Sciences</span>
-              </div>
-              <i class="fas fa-chevron-down syl-icon"></i>
-            </div>
-            <div class="syl-body">
-              <div class="syl-item">General Pathology and Microbiology</div>
-              <div class="syl-item">General and Dental Pharmacology & Therapeutics</div>
-              <div class="syl-item">Pre-clinical Conservative Dentistry</div>
-              <div class="syl-item">Pre-clinical Prosthodontics and Crown & Bridge</div>
-            </div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Orthodontics &amp; Dentofacial
+              Orthopaedics</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Paediatric &amp; Preventive
+              Dentistry</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Periodontology</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Prosthodontics and Crown &amp;
+              Bridge</span></div>
+        </div>
+      </div>
+
+      <div class="scard">
+        <div class="scard-head">
+          <h3 class="scard-title"><i class="bi bi-4-circle-fill"></i> Fourth Year</h3>
+        </div>
+        <div class="scard-body">
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Orthodontics &amp; Dentofacial
+              Orthopaedics</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Oral Medicine &amp; Radiology</span>
           </div>
-          <div class="syllabus-year reveal" style="transition-delay:0.2s">
-            <div class="syl-header" onclick="toggleSyl(this)">
-              <div class="d-flex align-items-center gap-3">
-                <span class="syl-year-badge">Year 3</span>
-                <span class="syl-title">Clinical Sciences I</span>
-              </div>
-              <i class="fas fa-chevron-down syl-icon"></i>
-            </div>
-            <div class="syl-body">
-              <div class="syl-item">General Medicine</div>
-              <div class="syl-item">General Surgery</div>
-              <div class="syl-item">Oral Pathology and Oral Microbiology</div>
-              <div class="syl-item">Conservative Dentistry & Endodontics</div>
-              <div class="syl-item">Oral & Maxillofacial Surgery</div>
-            </div>
-          </div>
-          <div class="syllabus-year reveal" style="transition-delay:0.3s">
-            <div class="syl-header" onclick="toggleSyl(this)">
-              <div class="d-flex align-items-center gap-3">
-                <span class="syl-year-badge">Year 4</span>
-                <span class="syl-title">Clinical Sciences II</span>
-              </div>
-              <i class="fas fa-chevron-down syl-icon"></i>
-            </div>
-            <div class="syl-body">
-              <div class="syl-item">Orthodontics & Dentofacial Orthopaedics</div>
-              <div class="syl-item">Paediatric & Preventive Dentistry</div>
-              <div class="syl-item">Periodontology</div>
-              <div class="syl-item">Oral & Maxillofacial Surgery</div>
-              <div class="syl-item">Prosthodontics and Crown & Bridge</div>
-            </div>
-          </div>
-          <div class="syllabus-year reveal" style="transition-delay:0.4s">
-            <div class="syl-header" onclick="toggleSyl(this)">
-              <div class="d-flex align-items-center gap-3">
-                <span class="syl-year-badge" style="background:linear-gradient(135deg,#e6a800,#c88a00);">Year 5</span>
-                <span class="syl-title">Compulsory Rotatory Internship</span>
-              </div>
-              <i class="fas fa-chevron-down syl-icon"></i>
-            </div>
-            <div class="syl-body">
-              <div class="syl-item">Hands-on clinical training across all dental specialties</div>
-              <div class="syl-item">Rotatory posting in various departments of the dental hospital</div>
-              <div class="syl-item">Patient management and case documentation</div>
-            </div>
-          </div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Paediatric &amp; Preventive
+              Dentistry</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Periodontology</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Oral &amp; Maxillofacial
+              Surgery</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Prosthodontics and Crown &amp;
+              Bridge</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Conservative Dentistry and
+              Endodontics</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Public Health Dentistry</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- INTERNSHIP -->
+    <p class="row-label reveal" style="transition-delay:0.28s">Compulsory Rotatory Internship</p>
+    <div class="grid-1 reveal" style="transition-delay:0.32s">
+      <div class="scard scard--wide scard--gold">
+        <div class="scard-head">
+
+          <h3 class="scard-title">Compulsory Rotatory Internship</h3>
+
+        </div>
+        <div class="scard-body">
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Clinical training across all dental
+              specialties</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Department-wise rotational
+              postings</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Patient diagnosis and treatment
+              planning</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Case documentation and
+              management</span></div>
+          <div class="scard-item"><span class="dot"></span><span class="item-text">Community dental health
+              exposure</span></div>
         </div>
       </div>
     </div>
+
   </section>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #fffdf9;
+      /* --teal: #0a6e5c; */
+      --teal-soft: #bedaff;
+      --teal-mid: #5f94b5;
+      --gold: #b87a1a;
+      --gold-soft: #f5e9d0;
+      --gold-mid: #e0ab5a;
+      --ink: #1a1916;
+      --muted: #2e2e2e;
+      --rule: rgba(26, 25, 22, 0.10);
+    }
+
+
+    .syllabus-section {
+      padding: 120px 40px 140px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* ── HEADER ── */
+    /* .syl-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
+      margin-bottom: 64px;
+    } */
+
+    .syl-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+
+    .syl-eyebrow::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 1.5px;
+      background: var(--teal);
+    }
+
+    .syl-heading {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: clamp(40px, 6vw, 66px);
+      font-weight: 400;
+      line-height: 1.08;
+      color: var(--ink);
+    }
+
+    .syl-heading em {
+      font-style: italic;
+      color: var(--teal);
+    }
+
+    .syl-desc-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 48px;
+      align-items: end;
+      width: 100%;
+    }
+
+    .syl-desc {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.8;
+      max-width: 520px;
+    }
+
+    .syl-meta {
+      display: flex;
+      gap: 36px;
+      flex-shrink: 0;
+    }
+
+    .meta-stat {
+      text-align: center;
+    }
+
+    .meta-num {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 36px;
+      color: var(--ink);
+      line-height: 1;
+      display: block;
+    }
+
+    .meta-label {
+      font-size: 10.5px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 5px;
+      display: block;
+    }
+
+    .syl-rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin-bottom: 52px;
+    }
+
+    .row-label {
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+      opacity: 0.65;
+    }
+
+    /* ── GRIDS ── */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .mb-section {
+      margin-bottom: 48px;
+    }
+
+    /* ── CARD ── */
+    .scard {
+      background: var(--surface);
+      border: 1px solid var(--rule);
+      box-shadow: 4px 4px 2px rgba(121, 156, 191, 0.168);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+    }
+
+    .scard:hover {
+      border-color: var(--teal-mid);
+      box-shadow: 4px 4px 2px rgba(121, 156, 191, 0.598);
+      transform: translateY(-4px);
+    }
+
+    .scard--gold:hover {
+      border-color: var(--gold-mid);
+      box-shadow: 0 16px 48px rgba(184, 122, 26, 0.09);
+      transform: translateY(-4px);
+    }
+
+    .scard--wide {
+      flex-direction: row;
+    }
+
+    /* ── CARD HEAD ── */
+    .scard-head {
+      padding: 24px 26px 20px;
+      background: var(--teal-soft);
+      border-bottom: 1px solid rgba(10, 110, 92, 0.12);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .scard--gold .scard-head {
+      background: var(--gold-soft);
+      border-bottom-color: rgba(184, 122, 26, 0.12);
+    }
+
+    .scard--wide .scard-head {
+      border-bottom: none;
+      border-right: 1px solid rgba(184, 122, 26, 0.12);
+      min-width: 230px;
+      max-width: 230px;
+      justify-content: flex-start;
+      padding: 32px 26px;
+    }
+
+    .scard-head--row {
+      flex-direction: row !important;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .scard-head--row .head-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .duration-pill {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      padding: 4px 12px;
+      border-radius: 100px;
+      background: rgba(10, 110, 92, 0.12);
+      color: var(--teal);
+      width: fit-content;
+    }
+
+    .scard--gold .duration-pill {
+      background: rgba(184, 122, 26, 0.13);
+      color: var(--gold);
+    }
+
+    .scard-title {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+
+    .scard-subtitle {
+      font-size: 12.5px;
+      font-weight: 300;
+      line-height: 1.65;
+      color: var(--teal);
+    }
+
+    .scard--gold .scard-subtitle {
+      color: var(--gold);
+    }
+
+    .scard-head--row .scard-subtitle {
+      padding-left: 22px;
+      border-left: 1.5px solid rgba(10, 110, 92, 0.2);
+      max-width: 480px;
+    }
+
+    /* ── CARD BODY ── */
+    .scard-body {
+      padding: 6px 26px 22px;
+      flex: 1;
+    }
+
+    .scard-body--2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 20px;
+      padding-top: 6px;
+    }
+
+    .scard--wide .scard-body {
+      padding: 24px 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 24px;
+      align-content: start;
+    }
+
+    .scard-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--rule);
+      cursor: default;
+      transition: padding-left 0.2s;
+    }
+
+    .scard-item:last-child {
+      border-bottom: none;
+    }
+
+    .scard-item:hover {
+      padding-left: 5px;
+    }
+
+    .scard-body--2col .scard-item:nth-last-child(-n+2):not(:nth-last-child(1)+.scard-item) {
+      border-bottom: none;
+    }
+
+    .scard--wide .scard-body .scard-item:nth-last-child(-n+2) {
+      border-bottom: none;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal);
+      margin-top: 8px;
+      flex-shrink: 0;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .scard-item:hover .dot {
+      transform: scale(1.3);
+      box-shadow: 0 0 0 3px var(--teal-soft);
+    }
+
+    .scard--gold .dot {
+      background: var(--gold);
+    }
+
+    .scard--gold .scard-item:hover .dot {
+      box-shadow: 0 0 0 3px var(--gold-soft);
+    }
+
+    .item-text {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+
+    .reveal.in-view {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 700px) {
+      .syllabus-section {
+        padding: 64px 20px 80px;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .scard--wide {
+        flex-direction: column;
+      }
+
+      .scard--wide .scard-head {
+        min-width: unset;
+        max-width: unset;
+        border-right: none;
+        border-bottom: 1px solid rgba(184, 122, 26, 0.12);
+      }
+
+      .scard--wide .scard-body,
+      .scard-body--2col {
+        grid-template-columns: 1fr;
+      }
+
+      .syl-desc-row {
+        grid-template-columns: 1fr;
+      }
+
+      .syl-meta {
+        justify-content: flex-start;
+      }
+
+      .scard-head--row {
+        flex-direction: column !important;
+      }
+
+      .scard-head--row .scard-subtitle {
+        border-left: none;
+        padding-left: 0;
+      }
+    }
+  </style>
 
   <!-- SCOPE -->
   <section class="scope-section" id="scope">
     <div class="container">
       <div class="text-center mb-5 reveal">
-        <div class="section-tag">✦ Career Opportunities</div>
-        <h2 class="section-title">Scope of <span class="accent-g">BDS</span></h2>
-        <p class="section-desc mx-auto mt-3">The scope of BDS in India is vast and promising. As the emphasis on oral
-          healthcare rapidly increases, so does the demand for dental healthcare professionals.</p>
+        <div class="section-tag ">✦ Career Opportunities</div>
+        <h2 class="section-title text-white">Scope of <span style="color: var(--teal-mid);">BDS</span></h2>
+        <p class="section-desc mx-auto mt-3 text-white">The scope of BDS in India is vast and promising. As the emphasis
+          on oral
+          healthcare is rapidly increasing, so is the demand for dental healthcare professionals. A BDS graduate can
+          explore opportunities across healthcare, academia, public health, and other sectors, making BDS a versatile
+          and future-ready career path.
+        </p>
       </div>
       <div class="row g-4">
-        <div class="col-6 col-md-4 col-lg-2 reveal" style="transition-delay:0.05s">
+        <div class="col-6 col-md-4 col-lg-6 reveal" style="transition-delay:0.05s">
           <div class="scope-card">
-            <div class="scope-icon"><i class="fas fa-clinic-medical"></i></div>
+            <div class="scope-icon">
+              <img src="icons/Icon_01.svg" alt="Clinic Icon">
+            </div>
             <h5>Start Your Own Clinical Practice</h5>
           </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2 reveal" style="transition-delay:0.1s">
+        <div class="col-6 col-md-4 col-lg-6 reveal" style="transition-delay:0.1s">
           <div class="scope-card">
-            <div class="scope-icon"><i class="fas fa-hospital"></i></div>
-            <h5>Work for Leading Dental Chains and Hospitals</h5>
+            <div class="scope-icon">
+              <img src="icons/Icon_02.svg" alt="Clinic Icon">
+            </div>
+            <h5>Join Reputed Dental Chains and Healthcare Institutions</h5>
           </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2 reveal" style="transition-delay:0.15s">
+        <div class="col-6 col-md-4 col-lg-6 reveal" style="transition-delay:0.15s">
           <div class="scope-card">
-            <div class="scope-icon"><i class="fas fa-landmark"></i></div>
-            <h5>Financially Rewarding Government Sector Careers</h5>
+            <div class="scope-icon">
+              <img src="icons/Icon_03.svg" alt="Clinic Icon">
+            </div>
+            <h5>Build Stable and Rewarding Careers in the Government Sector</h5>
           </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2 reveal" style="transition-delay:0.2s">
+        <div class="col-6 col-md-4 col-lg-6 reveal" style="transition-delay:0.2s">
           <div class="scope-card">
-            <div class="scope-icon"><i class="fas fa-graduation-cap"></i></div>
-            <h5>Specialise with Master of Dental Surgery (MDS)</h5>
+            <div class="scope-icon">
+              <img src="icons/Icon_04.svg" alt="Clinic Icon">
+            </div>
+            <h5>Specialize with a Master of Dental Surgery (MDS)</h5>
           </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2 reveal" style="transition-delay:0.25s">
+        <div class="col-6 col-md-4 col-lg-6 reveal" style="transition-delay:0.25s">
           <div class="scope-card">
-            <div class="scope-icon"><i class="fas fa-flask"></i></div>
+            <div class="scope-icon">
+              <img src="icons/Icon_05.svg" alt="Clinic Icon">
+            </div>
             <h5>Conduct Clinical Research</h5>
           </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2 reveal" style="transition-delay:0.3s">
+        <div class="col-6 col-md-4 col-lg-6 reveal" style="transition-delay:0.3s">
           <div class="scope-card">
-            <div class="scope-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div class="scope-icon">
+              <img src="icons/Icon_06.svg" alt="Clinic Icon">
+            </div>
             <h5>Build a Teaching Career at Dental Colleges</h5>
           </div>
         </div>
@@ -475,40 +918,52 @@
       <div class="row align-items-start g-5">
         <div class="col-lg-5 reveal-left">
           <div class="section-tag">✦ Admission Process</div>
-          <div class="divider"></div>
+
           <h2 class="section-title mb-4">BDS <span class="accent-g">Admissions</span></h2>
-          <p class="section-desc mb-4">Securing BDS admission in India has two stages. The first is qualifying the
-            NEET-UG exam. Candidates who cleared the exam are eligible for the second stage — the counselling process.
+          <p class="section-desc mb-4">
+            Securing BDS admission in India can be a task on its own. It has two stages, with the first stage being
+            qualifying for the NEET-UG exam. Once the candidates have cleared the exam, then they will be eligible for
+            the second stage, i.e., the counselling process. The BDS counselling process takes place at two levels:
+            national and state. <br><br> The All-India (national) level counselling is conducted by the Medical Counselling
+            Committee (MCC), and the state-level counselling is managed by respective state bodies. In the case of
+            Karnataka, the counselling process is governed by the KEA. After securing a seat, candidates must report to
+            the allotted dental college and submit the required documents listed below to complete the BDS admission
+            process.
           </p>
-          <p class="section-desc mb-4">The BDS counselling process takes place at two levels: national and state. The
-            All-India level counselling is conducted by the Medical Counselling Committee (MCC), and state-level
-            counselling is managed by respective state bodies.</p>
-          <p class="section-desc">In the case of Karnataka, the counselling process is governed by the <strong
-              style="color:var(--teal);">KEA</strong>.</p>
+
         </div>
         <div class="col-lg-7 reveal-right">
           <div class="section-tag">✦ Documents Required</div>
-          <div class="divider"></div>
+
           <h3 class="section-title mb-4" style="font-size:1.55rem;">Documents for BDS Admission <span
               class="accent-g">2025-26</span></h3>
           <div class="doc-grid">
             <div class="doc-col">
-              <div class="doc-item"><i class="fas fa-circle-dot"></i>10th, 11th and 12th Marksheets</div>
-              <div class="doc-item"><i class="fas fa-circle-dot"></i>Graduation Marksheets (if any)</div>
-              <div class="doc-item"><i class="fas fa-circle-dot"></i>NEET-UG Application Form</div>
-              <div class="doc-item"><i class="fas fa-circle-dot"></i>NEET-UG Admit Card</div>
-              <div class="doc-item"><i class="fas fa-circle-dot"></i>NEET-UG Scorecard</div>
-              <div class="doc-item"><i class="fas fa-circle-dot"></i>NEET-UG Rank Letter</div>
-              <div class="doc-item"><i class="fas fa-circle-dot"></i>Valid Government-issued ID Proof</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>Class 10 Marksheet / Certificate (Date of Birth
+                proof)</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>Class 12 Marksheet</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>Class 12 Passing Certificate</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>NEET-UG 2026 Admit Card</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>NEET-UG 2026 Scorecard / Rank Card</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>NEET-UG Application Form / Confirmation Page</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>Counselling Registration Slip</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>Seat Allotment Letter</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>Valid Government-issued Photo ID Proof (Aadhaar /
+                PAN / Passport / Voter ID)</div>
             </div>
             <div class="doc-col">
-              <div class="doc-item"><i class="fas fa-circle-dot"></i>Character Certificate</div>
-              <div class="doc-item"><i class="fas fa-circle-dot"></i>Transfer Certificate</div>
-              <div class="doc-item"><i class="fas fa-circle-dot"></i>Recent Passport Size Photographs</div>
+
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>Transfer Certificate (TC)</div>
               <div class="doc-item"><i class="fas fa-circle-dot"></i>Migration Certificate (if applicable)</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>Character / Conduct Certificate</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>Recent Passport-size Photographs</div>
               <div class="doc-item"><i class="fas fa-circle-dot"></i>Caste Certificate (if applicable)</div>
-              <div class="doc-item"><i class="fas fa-circle-dot"></i>Income Certificate (if applicable)</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>Income Certificate (if applicable for fee
+                concession / reservation)</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>EWS Certificate (if applicable)</div>
               <div class="doc-item"><i class="fas fa-circle-dot"></i>PwD Certificate (if applicable)</div>
+              <div class="doc-item"><i class="fas fa-circle-dot"></i>Domicile Certificate (if required for state quota
+                admissions)</div>
             </div>
           </div>
         </div>
@@ -516,223 +971,592 @@
     </div>
   </section>
 
-  <!-- TOP COLLEGES -->
+  <!-- college -->
+
+
+
+  <!-- =========================
+TOP AYURVEDIC COLLEGES
+========================= -->
+
   <section class="colleges-section" id="colleges">
+
     <div class="container">
-      <div class="text-center mb-5 reveal">
-        <div class="section-tag">✦ Top Institutions</div>
-        <h2 class="section-title">Top Dental Colleges <span class="accent-g">in Karnataka</span></h2>
-        <p class="section-desc mx-auto mt-3">Karnataka is home to some of India's most reputed dental colleges known for
-          high academic standards, advanced infrastructure, and strong clinical training.</p>
+
+      <!-- SECTION HEADER -->
+
+      <div class="section-header text-center reveal">
+
+        <div class="section-tag">✦ Colleges</div>
+
+        <h2 class="section-title">
+          <span class="accent-g">Top Dental Colleges</span> in Karnataka
+        </h2>
+
+        <p class="section-desc">
+          Karnataka is home to several prestigious dental colleges recognised for their academic excellence, modern
+          infrastructure, and comprehensive clinical training. The state houses some of the top dental colleges in
+          cities such as Bangalore, Mangalore, and Manipal, offering students access to quality education and hands-on
+          practical exposure. Many of these institutions are approved by the Dental Council of India (DCI) and
+          affiliated with reputed universities such as RGUHS.
+        </p>
+        <br>
+        <p class="section-desc">Here is a list of leading dental colleges in Bangalore and other major cities in
+          Karnataka for students to consider while applying for BDS admissions 2026–27.
+        </p>
+
       </div>
-      <div class="row g-4">
-        <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.05s">
-          <div class="college-card">
-            <div class="college-img-wrap">
-              <img src="college-logo/Manipal.webp" alt="MCODS Logo" class="college-logo">
-            </div>
-            <div class="college-body">
-              <h5>Manipal College of Dental Sciences (MCODS)</h5>
-              <div class="college-loc"><i class="fas fa-map-marker-alt" style="color:var(--teal)"></i> Manipal &
-                Mangalore</div>
-              <button class="btn-enquire" onclick="openEnquire('MCODS')">Enquire Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.1s">
-          <div class="college-card">
-            <div class="college-img-wrap">
-              <img src="college-logo/Shetty .webp" alt="MCODS Logo" class="college-logo">
-            </div>
-            <div class="college-body">
-              <h5>A B Shetty Memorial Institute of Dental Sciences (ABSMIDS)</h5>
-              <div class="college-loc"><i class="fas fa-map-marker-alt" style="color:var(--teal)"></i> Mangalore</div>
-              <button class="btn-enquire" onclick="openEnquire('ABSMIDS')">Enquire Now</button>
+
+      <!-- COLLEGES LIST -->
+      <div class="colleges-list">
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/Vydehi Institute of Dental Sciences & Research Centre (VIDSRC).webp"
+              class="college-logo" alt="Vydehi Institute of Dental Sciences & Research Centre">
+            <div class="college-text">
+              <h3 class="college-name">Vydehi Institute of Dental Sciences & Research Centre (VIDSRC)</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
-        <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.15s">
-          <div class="college-card">
-            <div class="college-img-wrap">
-              <img src="college-logo/JSS Dental.webp" alt="MCODS Logo" class="college-logo">
-            </div>
-            <div class="college-body">
-              <h5>JSS Dental College & Hospital</h5>
-              <div class="college-loc"><i class="fas fa-map-marker-alt" style="color:var(--teal)"></i> Mysore</div>
-              <button class="btn-enquire" onclick="openEnquire('JSS Dental College')">Enquire Now</button>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/RajaRajeswari Dental College & Hospital (RRDCH).webp" class="college-logo"
+              alt="RajaRajeswari Dental College & Hospital">
+            <div class="college-text">
+              <h3 class="college-name">RajaRajeswari Dental College & Hospital (RRDCH)</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
-        <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.2s">
-          <div class="college-card">
-            <div class="college-img-wrap">
-              <img src="college-logo/Ramaiah .webp" alt="MCODS Logo" class="college-logo">
-            </div>
-            <div class="college-body">
-              <h5>Faculty of Dental Sciences, Ramaiah University of Applied Sciences (RUAS)</h5>
-              <div class="college-loc"><i class="fas fa-map-marker-alt" style="color:var(--teal)"></i> Bangalore</div>
-              <button class="btn-enquire" onclick="openEnquire('RUAS')">Enquire Now</button>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/MR Ambedkar Dental College & Hospital (MRADC).webp" class="college-logo"
+              alt="MR Ambedkar Dental College & Hospital">
+            <div class="college-text">
+              <h3 class="college-name">MR Ambedkar Dental College & Hospital (MRADC)</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
-        <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.25s">
-          <div class="college-card">
-            <div class="college-img-wrap">
-              <img src="college-logo/SDM College.webp" alt="MCODS Logo" class="college-logo">
-            </div>
-            <div class="college-body">
-              <h5>SDM College of Dental Sciences & Hospital</h5>
-              <div class="college-loc"><i class="fas fa-map-marker-alt" style="color:var(--teal)"></i> Dharwad</div>
-              <button class="btn-enquire" onclick="openEnquire('SDM Dental')">Enquire Now</button>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/The Oxford Dental College.webp" class="college-logo" alt="The Oxford Dental College">
+            <div class="college-text">
+              <h3 class="college-name">The Oxford Dental College</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
-        <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.3s">
-          <div class="college-card">
-            <div class="college-img-wrap">
-              <img src="college-logo/Yenepoya .webp" alt="MCODS Logo" class="college-logo">
-            </div>
-            <div class="college-body">
-              <h5>Yenepoya Dental College</h5>
-              <div class="college-loc"><i class="fas fa-map-marker-alt" style="color:var(--teal)"></i> Mangalore</div>
-              <button class="btn-enquire" onclick="openEnquire('Yenepoya Dental')">Enquire Now</button>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/SVDC.webp" class="college-logo" alt="Sri Venkateshwara Dental College and Hospital">
+            <div class="college-text">
+              <h3 class="college-name">Sri Venkateshwara Dental College and Hospital</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
-        <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.35s">
-          <div class="college-card">
-            <div class="college-img-wrap">
-              <img src="college-logo/KLE Vishwanath Katti.webp" alt="MCODS Logo" class="college-logo">
-            </div>
-            <div class="college-body">
-              <h5>KLE Vishwanath Katti Institute of Dental Sciences</h5>
-              <div class="college-loc"><i class="fas fa-map-marker-alt" style="color:var(--teal)"></i> Belgaum</div>
-              <button class="btn-enquire" onclick="openEnquire('KLE Dental')">Enquire Now</button>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/BGS.webp" class="college-logo" alt="BGS & SJB Group of Institutions">
+            <div class="college-text">
+              <h3 class="college-name">BGS &amp; SJB Group of Institutions</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
-        <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.4s">
-          <div class="college-card">
-            <div class="college-img-wrap">
-              <img src="college-logo/Vokkaligara Sangha.webp" alt="MCODS Logo" class="college-logo">
-            </div>
-            <div class="college-body">
-              <h5>Vokkaligara Sangha Dental College & Hospital (KIMS Campus)</h5>
-              <div class="college-loc"><i class="fas fa-map-marker-alt" style="color:var(--teal)"></i> Bangalore</div>
-              <button class="btn-enquire" onclick="openEnquire('KIMS Dental')">Enquire Now</button>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/RV.webp" class="college-logo" alt="D A Pandu Memorial RV Dental College">
+            <div class="college-text">
+              <h3 class="college-name">D A Pandu Memorial RV Dental College</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
-        <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.45s">
-          <div class="college-card">
-            <div class="college-img-wrap">
-              <img src="college-logo/Vydehi.webp" alt="MCODS Logo" class="college-logo">
-            </div>
-            <div class="college-body">
-              <h5>Vydehi Institute of Dental Sciences & Research Centre (VIDSRC)</h5>
-              <div class="college-loc"><i class="fas fa-map-marker-alt" style="color:var(--teal)"></i> Bangalore</div>
-              <button class="btn-enquire" onclick="openEnquire('Vydehi Dental')">Enquire Now</button>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/Manipal College of Dental Sciences (MCODS).webp" class="college-logo"
+              alt="Manipal College of Dental Sciences">
+            <div class="college-text">
+              <h3 class="college-name">Manipal College of Dental Sciences (MCODS)</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Manipal &amp; Mangalore</div>
             </div>
           </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
-        <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.5s">
-          <div class="college-card">
-            <div class="college-img-wrap">
-              <img src="college-logo/RajaRajeswari .webp" alt="MCODS Logo" class="college-logo">
-            </div>
-            <div class="college-body">
-              <h5>RajaRajeswari Dental College & Hospital (RRDCH)</h5>
-              <div class="college-loc"><i class="fas fa-map-marker-alt" style="color:var(--teal)"></i> Bangalore</div>
-              <button class="btn-enquire" onclick="openEnquire('RRDCH')">Enquire Now</button>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/A B Shetty Memorial Institute of Dental Sciences (ABSMIDS).webp" class="college-logo"
+              alt="A B Shetty Memorial Institute of Dental Sciences">
+            <div class="college-text">
+              <h3 class="college-name">A B Shetty Memorial Institute of Dental Sciences (ABSMIDS)</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Mangalore</div>
             </div>
           </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
-        <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.55s">
-          <div class="college-card">
-            <div class="college-img-wrap">
-              <img src="college-logo/MR Ambedkar.webp" alt="MCODS Logo" class="college-logo">
-            </div>
-            <div class="college-body">
-              <h5>MR Ambedkar Dental College & Hospital (MRADC)</h5>
-              <div class="college-loc"><i class="fas fa-map-marker-alt" style="color:var(--teal)"></i> Bangalore</div>
-              <button class="btn-enquire" onclick="openEnquire('MR Ambedkar Dental')">Enquire Now</button>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/JSS Dental College & Hospital.webp" class="college-logo"
+              alt="JSS Dental College & Hospital">
+            <div class="college-text">
+              <h3 class="college-name">JSS Dental College & Hospital</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Mysore</div>
             </div>
           </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
-        <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:0.6s">
-          <div class="college-card">
-            <div class="college-img-wrap">
-              <img src="college-logo/The Oxford.webp" alt="MCODS Logo" class="college-logo">
-            </div>
-            <div class="college-body">
-              <h5>The Oxford Dental College</h5>
-              <div class="college-loc"><i class="fas fa-map-marker-alt" style="color:var(--teal)"></i> Bangalore</div>
-              <button class="btn-enquire" onclick="openEnquire('Oxford Dental College')">Enquire Now</button>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/Faculty of Dental Sciences, Ramaiah University of Applied Sciences (RUAS).webp"
+              class="college-logo" alt="Faculty of Dental Sciences, Ramaiah University of Applied Sciences">
+            <div class="college-text">
+              <h3 class="college-name">Faculty of Dental Sciences, Ramaiah University of Applied Sciences (RUAS)</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/SDM College of Dental Sciences & Hospital.webp" class="college-logo"
+              alt="SDM College of Dental Sciences & Hospital">
+            <div class="college-text">
+              <h3 class="college-name">SDM College of Dental Sciences &amp; Hospital</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Dharwad</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+        </div>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/Yenepoya Dental College.webp" class="college-logo" alt="Yenepoya Dental College">
+            <div class="college-text">
+              <h3 class="college-name">Yenepoya Dental College</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Mangalore</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+        </div>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/KLE Vishwanath Katti Institute of Dental Sciences.webp" class="college-logo"
+              alt="KLE Vishwanath Katti Institute of Dental Sciences">
+            <div class="college-text">
+              <h3 class="college-name">KLE Vishwanath Katti Institute of Dental Sciences</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Belagavi</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+        </div>
+
+        <div class="college-row">
+          <div class="college-info">
+            <img src="college-logo/Vokkaligara Sangha Dental College & Hospital (KIMS Campus).webp" class="college-logo"
+              alt="Vokkaligara Sangha Dental College & Hospital">
+            <div class="college-text">
+              <h3 class="college-name">Vokkaligara Sangha Dental College &amp; Hospital (KIMS Campus)</h3>
+              <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+        </div>
+
       </div>
-      <div class="text-center mt-5 reveal">
-        <div
-          style="display:inline-flex;align-items:center;gap:10px;background:var(--teal-light);border:1.5px dashed rgba(0,150,180,0.35);border-radius:50px;padding:12px 28px;color:var(--teal-dark);font-size:0.9rem;font-weight:700;">
-          <i class="fas fa-plus-circle" style="color:var(--teal);"></i> & Many More Top Dental Colleges!
-        </div>
+
+      <div class="more-colleges">
+        <h4>And Many More...</h4>
       </div>
+
     </div>
+
   </section>
+
+  <style>
+    /* =========================
+COLLEGES SECTION
+========================= */
+
+    .colleges-section {
+      padding: 20px 0;
+      background: #ffffff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* HEADER */
+
+    .section-header {
+
+      margin: 0 auto 70px;
+    }
+
+    .section-num {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      color: #15803d;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    /* .section-title {
+      font-size: clamp(2.3rem, 5vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+      color: #111827;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #6b7280;
+    } */
+
+    /* LIST */
+
+    .colleges-list {
+      border: 1px solid #e5e7eb;
+      border-radius: 2px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    /* ROW */
+
+    .college-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 28px 34px;
+      border-bottom: 1px solid #edf0f2;
+      position: relative;
+      transition: all .45s cubic-bezier(.16, 1, .3, 1);
+      background: #fff;
+    }
+
+    .college-row:last-child {
+      border-bottom: none;
+    }
+
+    /* LEFT LINE */
+
+    .college-row::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: #04518f;
+      transition: width .45s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    /* HOVER */
+
+    .college-row:hover {
+      background: #f6fff8;
+      padding-left: 42px;
+    }
+
+    .college-row:hover::before {
+      width: 5px;
+    }
+
+    /* ACTIVE CARD */
+
+    .college-row.active-card {
+      background: #f3fdff;
+    }
+
+    .college-row.active-card::before {
+      width: 5px;
+    }
+
+    /* INFO */
+
+    .college-info {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* LOGO */
+
+    .college-logo {
+      width: 78px;
+      height: 78px;
+      object-fit: contain;
+      flex-shrink: 0;
+      transition: transform .5s ease;
+    }
+
+    .college-row:hover .college-logo {
+      transform: scale(1.04);
+    }
+
+    /* TEXT */
+
+    .college-text {
+      min-width: 0;
+    }
+
+    .college-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .college-city {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .92rem;
+      color: #6b7280;
+    }
+
+    .college-city i {
+      color: #04518f;
+      font-size: .9rem;
+    }
+
+    /* BUTTON */
+
+    .btn-enquire {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      border-radius: 2px;
+      background: #04518f;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: .5px;
+      transition: all .35s ease;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .btn-enquire:hover {
+      background: #133f54;
+      color: #fff;
+      transform: translateX(4px);
+    }
+
+    .btn-enquire i {
+      font-size: 1.2rem;
+    }
+
+    /* MORE */
+
+    .more-colleges {
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    .more-colleges h4 {
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      font-weight: 600;
+      color: #154b80;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:991px) {
+
+      .college-row {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+      }
+
+      .college-row:hover {
+        padding-left: 24px;
+      }
+
+      .btn-enquire {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .college-name {
+        font-size: 1.08rem;
+      }
+
+    }
+
+    @media(max-width:767px) {
+
+      .colleges-section {
+        padding: 80px 0;
+      }
+
+      .college-info {
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .college-logo {
+        width: 60px;
+        height: 60px;
+      }
+
+      .section-title {
+        letter-spacing: -1px;
+      }
+
+      .section-desc {
+        font-size: .95rem;
+      }
+
+    }
+  </style>
+  <script>
+    /* =========================
+  ACTIVE CARD ON SCROLL
+  ========================= */
+
+    const cards = document.querySelectorAll('.college-row');
+
+    function checkCards() {
+
+      const triggerPoint = window.innerHeight * 0.55;
+
+      cards.forEach(card => {
+
+        const rect = card.getBoundingClientRect();
+
+        const cardCenter = rect.top + rect.height / 2;
+
+        if (
+          cardCenter > triggerPoint - 50 &&
+          cardCenter < triggerPoint + 50
+        ) {
+
+          card.classList.add('active-card');
+
+        } else {
+
+          card.classList.remove('active-card');
+
+        }
+
+      });
+
+    }
+
+    window.addEventListener('scroll', checkCards);
+
+    window.addEventListener('load', checkCards);
+  </script>
+
+
+
+
+
+
+
 
   <!-- FAQs -->
   <section class="faq-section" id="faq">
     <div class="container">
-      <div class="text-center mb-5 reveal">
-        <div class="section-tag">✦ FAQs</div>
-        <h2 class="section-title">Frequently Asked <span class="accent-g">Questions</span></h2>
-      </div>
+
       <div class="row">
+        <div class="col-lg-4">
+          <div class="text-center mb-5 reveal">
+            <div class="section-tag">✦ FAQs</div>
+            <h2 class="section-title text-start" style="font-size: 5rem;">Frequently Asked <span
+                class="accent-g">Questions</span></h2>
+          </div>
+        </div>
         <div class="col-lg-8 mx-auto">
-          <div class="faq-item reveal">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              Is there any entrance exam for BDS admission in Karnataka?
-              <i class="fas fa-plus faq-icon"></i>
+          <div class="faq-item active reveal">
+            <div class="faq-q active" onclick="toggleFaq(this)">
+              What is BDS course duration?
+              <i class="fas fa-plus faq-icon open"></i>
             </div>
-            <div class="faq-a">Yes, candidates have to compulsorily qualify the National Eligibility-cum-Entrance Test -
-              Undergraduate (NEET-UG) exam to be eligible for BDS admission in Karnataka / BDS admission in Bangalore.
+
+            <div class="faq-a show">
+              The BDS course duration is 5 years. This undergraduate dental programme includes 4 years of academic study
+              followed by a 1-year compulsory rotatory internship with clinical training across various dental
+              specializations.
+
             </div>
           </div>
           <div class="faq-item reveal" style="transition-delay:0.1s">
             <div class="faq-q" onclick="toggleFaq(this)">
-              What is the BDS Eligibility Criteria?
+              What is the BDS course eligibility criteria?
+
               <i class="fas fa-plus faq-icon"></i>
             </div>
-            <div class="faq-a">The BDS course eligibility criteria are as follows: students must have completed their
-              10+2 / 2nd PUC with a minimum aggregate of 50% marks in PCB and English, along with clearing the NEET-UG
-              entrance exam.</div>
+            <div class="faq-a">Candidates must have completed 10+2 / 2nd PUC / equivalent examination with Physics,
+              Chemistry, Biology, and English as mandatory subjects. They must secure the minimum qualifying marks
+              prescribed for their category and must qualify NEET-UG for admission.
+            </div>
           </div>
           <div class="faq-item reveal" style="transition-delay:0.2s">
             <div class="faq-q" onclick="toggleFaq(this)">
-              What is the BDS course duration?
+              Can I pursue BDS without NEET?
+
               <i class="fas fa-plus faq-icon"></i>
             </div>
-            <div class="faq-a">The BDS course duration is 5 years, which includes 4 years of academic study followed by
-              1 year of compulsory internship.</div>
+            <div class="faq-a">No, admission to BDS colleges in India requires candidates to qualify NEET-UG, as it is
+              the mandatory entrance examination for dental admissions.
+            </div>
           </div>
           <div class="faq-item reveal" style="transition-delay:0.3s">
             <div class="faq-q" onclick="toggleFaq(this)">
-              How much is the BDS course fees in Karnataka?
+              What subjects are included in the BDS syllabus?
+
               <i class="fas fa-plus faq-icon"></i>
             </div>
-            <div class="faq-a">In Karnataka, as in every other state across India, the BDS fee structure in private
-              colleges will vary from that in government institutes. The Bachelor of Dental Surgery course fees depend
-              on the type of seat a candidate is eligible for, i.e., Merit or Management.</div>
+            <div class="faq-a">The BDS syllabus covers subjects such as Human Anatomy, Physiology, Dental Anatomy,
+              Pathology, Pharmacology, Oral Medicine, Orthodontics, Periodontology, Prosthodontics, Oral Surgery, and
+              Public Health Dentistry, along with practical clinical training.
+            </div>
           </div>
           <div class="faq-item reveal" style="transition-delay:0.4s">
             <div class="faq-q" onclick="toggleFaq(this)">
-              What are some of the best private dental colleges in Bangalore?
+              What are the higher study options after BDS?
+
               <i class="fas fa-plus faq-icon"></i>
             </div>
-            <div class="faq-a">Faculty of Dental Sciences at Ramaiah University of Applied Sciences (RUAS), BGS Global
-              Institute of Dental Sciences, Vokkaligara Sangha Dental College & Hospital (KIMS Campus), and Vydehi
-              Institute of Dental Sciences & Research Centre are some of the best private dental colleges in Bangalore.
+            <div class="faq-a">After BDS, students can pursue MDS (Master of Dental Surgery) in specialised branches
+              such as Orthodontics, Oral Surgery, Prosthodontics, Periodontology, Endodontics, and Paediatric Dentistry.
+
             </div>
           </div>
         </div>
@@ -744,9 +1568,10 @@
   <section class="final-cta">
     <div class="container position-relative" style="z-index:2;">
       <div class="reveal">
-        <h2>Shape Smiles and Build a Brighter Future</h2>
-        <p>Start your BDS Journey at a Top Dental College in Karnataka. Expert guidance, scholarship support, and
-          complete admission assistance.</p>
+        <h2>Shape Smiles, Build a Brighter Tomorrow</h2>
+        <p>Start your BDS journey at Karnataka’s top dental colleges with expert admission guidance and complete
+          application support.
+        </p>
         <a href="#apply" class="btn-primary-custom mx-auto">
           <i class="fas fa-rocket"></i> Apply Now
         </a>
@@ -758,87 +1583,46 @@
   <footer class="footer">
     <div class="container">
       <div class="row g-5">
-        <div class="col-lg-4">
-          <div class="footer-brand">Bangalore<span>Study</span></div>
-          <p class="footer-desc">Your trusted partner for dental education admissions in Karnataka. Expert guidance from
-            NEET to counselling to seat allotment.</p>
-          <div class="footer-contact">
-            <a href="tel:08022454991"><i class="fas fa-phone" style="color:#5dd6f0;font-size:0.75rem;"></i>
-              080-22454991</a>
-            <a href="tel:08026631169"><i class="fas fa-phone" style="color:#5dd6f0;font-size:0.75rem;"></i>
-              080-26631169</a>
-            <a href="tel:+919036020076"><i class="fas fa-mobile-alt" style="color:#5dd6f0;font-size:0.75rem;"></i> +91
-              9036020076</a>
-            <a href="tel:18001208696"><i class="fas fa-headset" style="color:#5dd6f0;font-size:0.75rem;"></i> 1800 120
-              8696 (Toll Free)</a>
-            <a href="tel:+971502436552"><i class="fas fa-globe" style="color:#5dd6f0;font-size:0.75rem;"></i> +971
-              502436552 (Dubai)</a>
-          </div>
-          <div class="social-links">
-            <a href="https://www.facebook.com/bangalorestudy" target="_blank" class="social-btn"><i
-                class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/BangaloreStudy2" target="_blank" class="social-btn"><i
-                class="fab fa-x-twitter"></i></a>
-            <a href="https://www.youtube.com/channel/UCZP40_ivVcdelNOVhmQFr7w" target="_blank" class="social-btn"><i
-                class="fab fa-youtube"></i></a>
-            <a href="https://instagram.com/bangalorestudy" target="_blank" class="social-btn"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://in.linkedin.com/company/learntech-edu-solutions-pvt-ltd" target="_blank"
-              class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://in.pinterest.com/bangalorestudy7608/" target="_blank" class="social-btn"><i
-                class="fab fa-pinterest-p"></i></a>
-          </div>
-        </div>
-        <div class="col-6 col-lg-2">
-          <div class="footer-heading">Quick Links</div>
-          <ul class="footer-list">
-            <li><a href="#home"><i class="fas fa-chevron-right" style="font-size:0.6rem;color:#5dd6f0;"></i> Home</a>
-            </li>
-            <li><a href="#whyus"><i class="fas fa-chevron-right" style="font-size:0.6rem;color:#5dd6f0;"></i> Why Us</a>
-            </li>
-            <li><a href="#course"><i class="fas fa-chevron-right" style="font-size:0.6rem;color:#5dd6f0;"></i> Course
-                Details</a></li>
-            <li><a href="#syllabus"><i class="fas fa-chevron-right" style="font-size:0.6rem;color:#5dd6f0;"></i>
-                Syllabus</a></li>
-            <li><a href="#scope"><i class="fas fa-chevron-right" style="font-size:0.6rem;color:#5dd6f0;"></i> Career
-                Scope</a></li>
-            <li><a href="#colleges"><i class="fas fa-chevron-right" style="font-size:0.6rem;color:#5dd6f0;"></i> Top
-                Colleges</a></li>
-            <li><a href="#faq"><i class="fas fa-chevron-right" style="font-size:0.6rem;color:#5dd6f0;"></i> FAQs</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="footer-heading">Top Colleges</div>
-          <ul class="footer-list">
-            <li><a href="#colleges"><i class="fas fa-tooth" style="font-size:0.6rem;color:#5dd6f0;"></i> MCODS
-                Manipal</a></li>
-            <li><a href="#colleges"><i class="fas fa-tooth" style="font-size:0.6rem;color:#5dd6f0;"></i> ABSMIDS
-                Mangalore</a></li>
-            <li><a href="#colleges"><i class="fas fa-tooth" style="font-size:0.6rem;color:#5dd6f0;"></i> JSS Dental
-                Mysore</a></li>
-            <li><a href="#colleges"><i class="fas fa-tooth" style="font-size:0.6rem;color:#5dd6f0;"></i> RUAS
-                Bangalore</a></li>
-            <li><a href="#colleges"><i class="fas fa-tooth" style="font-size:0.6rem;color:#5dd6f0;"></i> SDM Dharwad</a>
-            </li>
-            <li><a href="#colleges"><i class="fas fa-tooth" style="font-size:0.6rem;color:#5dd6f0;"></i> Yenepoya
-                Mangalore</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3">
-          <div class="footer-heading">Apply Now</div>
-          <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);margin-bottom:16px;line-height:1.65;">BDS Admissions
-            2025-26 are open. Get expert guidance and secure your seat today.</p>
-          <a href="#apply" class="btn-teal" style="font-size:0.85rem;padding:12px 24px;">
-            <i class="fas fa-arrow-right"></i> Start Application
+        <div class="col-lg-6">
+          <!-- LOGO -->
+          <a href="#" class="navbar-brand-text text-decoration-none">
+            <img src="Media/BS_logo.svg" alt="BangaloreStudy Logo" class="navbar-logo"
+              style="height: 120px; width: auto;">
           </a>
+
+
         </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-copy">© 2025 Bangalorestudy.com. All Rights Reserved.</div>
-        <div class="footer-copy">Powered by LearnTech Edu Solutions Pvt. Ltd.</div>
-      </div>
-    </div>
+        <div class="col-6 col-lg-6">
+
+          <div class="col-6 col-lg-6">
+            <div class="footer-contact">
+              <a href="tel:08022454991"><i class="fas fa-phone" style="color:#5dd6f0;font-size:0.75rem;"></i>
+                080-22454991</a>
+              <a href="tel:08026631169"><i class="fas fa-phone" style="color:#5dd6f0;font-size:0.75rem;"></i>
+                080-26631169</a>
+              <a href="tel:+919036020076"><i class="fas fa-mobile-alt" style="color:#5dd6f0;font-size:0.75rem;"></i> +91
+                9036020076</a>
+              <a href="tel:18001208696"><i class="fas fa-headset" style="color:#5dd6f0;font-size:0.75rem;"></i> 1800 120
+                8696 (Toll Free)</a>
+              <a href="tel:+971502436552"><i class="fas fa-globe" style="color:#5dd6f0;font-size:0.75rem;"></i> +971
+                502436552 (Dubai)</a>
+            </div>
+            <div class="social-links">
+              <a href="https://www.facebook.com/bangalorestudy" target="_blank" class="social-btn"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/BangaloreStudy2" target="_blank" class="social-btn"><i
+                  class="fab fa-x-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UCZP40_ivVcdelNOVhmQFr7w" target="_blank" class="social-btn"><i
+                  class="fab fa-youtube"></i></a>
+              <a href="https://instagram.com/bangalorestudy" target="_blank" class="social-btn"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://in.linkedin.com/company/learntech-edu-solutions-pvt-ltd" target="_blank"
+                class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://in.pinterest.com/bangalorestudy7608/" target="_blank" class="social-btn"><i
+                  class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+
   </footer>
 
 
@@ -938,7 +1722,7 @@
     });
     function submitEnquire(btn) {
       btn.innerHTML = '<i class="fas fa-check"></i> Enquiry Sent!';
-      btn.style.background = 'linear-gradient(135deg,#22c55e,#16a34a)';
+      btn.style.background = 'linear-gradient(135deg,#22c55e,#04518f)';
       setTimeout(closeEnquire, 1400);
     }
 
