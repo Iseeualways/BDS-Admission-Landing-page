@@ -84,7 +84,65 @@
   }
 
 
+/* FIX OVERFLOW */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
 
+/* MOBILE RESPONSIVE */
+@media (max-width: 991px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    right: -320px; /* FIXED */
+    height: 100vh;
+    width: 320px;
+    max-width: 85vw;
+
+    background: linear-gradient(135deg, #ffffff 0%, #f8fcfd 100%);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+
+    padding: 100px 30px 40px;
+
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+
+    transition: right 0.45s ease;
+
+    z-index: 999;
+
+    overflow-y: auto;
+    overflow-x: hidden; /* IMPORTANT */
+  }
+
+  .navbar-links.active {
+    right: 0;
+  }
+
+  .navbar-links li {
+    width: 100%;
+    opacity: 0;
+    transform: translateX(30px); /* SMALLER */
+    animation: slideInRight 0.4s ease forwards;
+  }
+
+  .navbar-links li a {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1.05rem;
+    border-bottom: 1px solid rgba(0, 150, 180, 0.1);
+  }
+
+}
   /* NAVBAR */
   .navbar-custom {
     position: fixed;
@@ -315,6 +373,11 @@
       display: flex;
     }
   }
+  @media (max-width: 991px) {
+  .navbar-links {
+    overflow-x: hidden;
+  }
+}
 
   /* HERO */
   .hero {
@@ -422,6 +485,12 @@
     animation:
       fadeSlideUp 0.9s cubic-bezier(.22, 1, .36, 1) both,
       tagShadowPulse 3s ease-in-out infinite;
+  }
+
+  @media (max-width: 768px) {
+    .hero-tag {
+      margin-top: 30px;
+    }
   }
 
   /* =========================
@@ -1668,7 +1737,6 @@ COLLEGES SECTION
 
     .why-card {
       padding: 26px 22px;
-      border-radius: 24px;
     }
 
     .why-card h4 {
@@ -1956,6 +2024,7 @@ COLLEGES SECTION
   .scope-section {
     padding: 60px 0;
     background:
+      url("assets/img/scope-image.png") no-repeat center/cover,
       radial-gradient(circle at top right,
         rgba(0, 180, 216, 0.06),
         transparent 30%),
