@@ -84,65 +84,69 @@
   }
 
 
-/* FIX OVERFLOW */
-html,
-body {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-/* MOBILE RESPONSIVE */
-@media (max-width: 991px) {
-
-  .hamburger {
-    display: flex;
-  }
-
-  .navbar-links {
-    position: fixed;
-    top: 0;
-    right: -320px; /* FIXED */
-    height: 100vh;
-    width: 320px;
-    max-width: 85vw;
-
-    background: linear-gradient(135deg, #ffffff 0%, #f8fcfd 100%);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-
-    padding: 100px 30px 40px;
-
-    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
-
-    transition: right 0.45s ease;
-
-    z-index: 999;
-
-    overflow-y: auto;
-    overflow-x: hidden; /* IMPORTANT */
-  }
-
-  .navbar-links.active {
-    right: 0;
-  }
-
-  .navbar-links li {
+  /* FIX OVERFLOW */
+  html,
+  body {
+    overflow-x: hidden;
     width: 100%;
-    opacity: 0;
-    transform: translateX(30px); /* SMALLER */
-    animation: slideInRight 0.4s ease forwards;
   }
 
-  .navbar-links li a {
-    display: block;
-    width: 100%;
-    padding: 16px 0;
-    font-size: 1.05rem;
-    border-bottom: 1px solid rgba(0, 150, 180, 0.1);
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 991px) {
+
+    .hamburger {
+      display: flex;
+    }
+
+    .navbar-links {
+      position: fixed;
+      top: 0;
+      right: -320px;
+      /* FIXED */
+      height: 100vh;
+      width: 320px;
+      max-width: 85vw;
+
+      background: linear-gradient(135deg, #ffffff 0%, #f8fcfd 100%);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+
+      padding: 100px 30px 40px;
+
+      box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+
+      transition: right 0.45s ease;
+
+      z-index: 999;
+
+      overflow-y: auto;
+      overflow-x: hidden;
+      /* IMPORTANT */
+    }
+
+    .navbar-links.active {
+      right: 0;
+    }
+
+    .navbar-links li {
+      width: 100%;
+      opacity: 0;
+      transform: translateX(30px);
+      /* SMALLER */
+      animation: slideInRight 0.4s ease forwards;
+    }
+
+    .navbar-links li a {
+      display: block;
+      width: 100%;
+      padding: 16px 0;
+      font-size: 1.05rem;
+      border-bottom: 1px solid rgba(0, 150, 180, 0.1);
+    }
+
   }
 
-}
   /* NAVBAR */
   .navbar-custom {
     position: fixed;
@@ -373,11 +377,12 @@ body {
       display: flex;
     }
   }
+
   @media (max-width: 991px) {
-  .navbar-links {
-    overflow-x: hidden;
+    .navbar-links {
+      overflow-x: hidden;
+    }
   }
-}
 
   /* HERO */
   .hero {
@@ -666,7 +671,7 @@ body {
     font-size: 1rem;
     font-weight: 700;
     color: var(--text);
-    margin-bottom: 4px;
+    margin-bottom: 20px;
   }
 
   .form-sub-small {
@@ -1133,7 +1138,7 @@ body {
 
   .scard-title {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 600;
     color: var(--ink);
     line-height: 1.2;
@@ -1317,20 +1322,6 @@ COLLEGES SECTION
     text-transform: uppercase;
   }
 
-  /* .section-title {
-      font-size: clamp(2.3rem, 5vw, 4.5rem);
-      font-weight: 700;
-      line-height: 1.05;
-      letter-spacing: -2px;
-      margin-bottom: 22px;
-      color: #111827;
-    }
-
-    .section-desc {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      color: #6b7280;
-    } */
 
   /* LIST */
 
@@ -1393,6 +1384,8 @@ COLLEGES SECTION
     width: 5px;
   }
 
+
+
   /* INFO */
 
   .college-info {
@@ -1444,34 +1437,8 @@ COLLEGES SECTION
     font-size: .9rem;
   }
 
-  /* BUTTON */
 
-  .btn-enquire {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 20px;
-    border-radius: 2px;
-    background: #04518f;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: .5px;
-    transition: all .35s ease;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
 
-  .btn-enquire:hover {
-    background: #133f54;
-    color: #fff;
-    transform: translateX(4px);
-  }
-
-  .btn-enquire i {
-    font-size: 1.2rem;
-  }
 
   /* MORE */
 
@@ -2111,59 +2078,60 @@ COLLEGES SECTION
     color: #ffffff;
   }
 
-/* =========================
+  /* =========================
    MOBILE FIX
 ========================= */
 
-@media (max-width:768px) {
+  @media (max-width:768px) {
 
-  .scope-section {
-    padding: 70px 0;
+    .scope-section {
+      padding: 70px 0;
+    }
+
+    .scope-card {
+
+      flex-direction: column;
+      /* STACK */
+
+      text-align: center;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 18px;
+
+      padding: 24px 20px;
+
+      border-radius: 22px;
+    }
+
+    .scope-icon {
+
+      width: 72px;
+      height: 72px;
+      min-width: 72px;
+
+      border-radius: 18px;
+    }
+
+    .scope-icon img {
+
+      width: 75%;
+      height: 75%;
+    }
+
+    .scope-card h5 {
+
+      font-size: 1rem;
+
+      line-height: 1.6;
+
+      max-width: 240px;
+
+      margin: 0 auto;
+    }
+
   }
-
-  .scope-card {
-
-    flex-direction: column; /* STACK */
-
-    text-align: center;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 18px;
-
-    padding: 24px 20px;
-
-    border-radius: 22px;
-  }
-
-  .scope-icon {
-
-    width: 72px;
-    height: 72px;
-    min-width: 72px;
-
-    border-radius: 18px;
-  }
-
-  .scope-icon img {
-
-    width: 75%;
-    height: 75%;
-  }
-
-  .scope-card h5 {
-
-    font-size: 1rem;
-
-    line-height: 1.6;
-
-    max-width: 240px;
-
-    margin: 0 auto;
-  }
-
-}
 
   /* ADMISSIONS */
   .admission-section {
@@ -2283,31 +2251,67 @@ COLLEGES SECTION
     min-height: 24px;
   }
 
-  /* BUTTON FIXED AT BOTTOM */
-  .btn-enquire {
-    margin-top: auto;
+/* BUTTON FIXED AT BOTTOM */
+.btn-enquire {
+  margin-top: auto;
 
-    background: var(--teal-light);
-    border: 1.5px solid rgba(0, 150, 180, 0.25);
-    border-radius: 50px;
+  background: var(--teal-light);
+  border: 1.5px solid rgba(0, 150, 180, 0.25);
+  border-radius: 50px;
 
-    color: var(--teal-dark);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: 0.82rem;
-    font-weight: 700;
+  color: var(--teal-dark);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
 
-    padding: 9px 22px;
-    cursor: pointer;
+  padding: 9px 22px;
 
-    transition: all 0.3s ease;
-  }
+  cursor: pointer;
+  text-decoration: none;
 
-  .btn-enquire:hover {
-    background: var(--teal);
-    border-color: var(--teal);
-    color: #fff;
-  }
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* NORMAL HOVER */
+.btn-enquire:hover {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+
+  transform: translateX(4px);
+
+  box-shadow: 0 10px 24px rgba(0, 150, 180, 0.22);
+}
+
+/* AUTO HOVER WHEN CARD ACTIVE */
+.college-row.active-card .btn-enquire {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+
+  transform: translateX(4px);
+
+  box-shadow: 0 10px 24px rgba(0, 150, 180, 0.22);
+}
+
+/* ICON ANIMATION */
+.btn-enquire i {
+  transition: transform 0.3s ease;
+}
+
+.btn-enquire:hover i,
+.college-row.active-card .btn-enquire i {
+  transform: translateX(3px);
+}
   /* FAQ */
   .faq-section {
     padding: 90px 0;
@@ -2335,8 +2339,8 @@ COLLEGES SECTION
     justify-content: space-between;
     padding: 20px 24px;
     cursor: pointer;
-    font-size: 0.95rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 700;
     color: var(--text);
     transition: color 0.2s, background 0.2s;
   }
@@ -2360,7 +2364,7 @@ COLLEGES SECTION
   .faq-a {
     display: none;
     padding: 0 24px 20px;
-    font-size: 0.87rem;
+    font-size: 1rem;
     color: var(--muted);
     line-height: 1.75;
   }
@@ -2386,8 +2390,8 @@ COLLEGES SECTION
     padding: 100px 0;
     background:
       linear-gradient(135deg,
-        rgba(0, 95, 122, 0.85) 0%,
-        rgba(0, 150, 180, 0.368) 50%,
+        rgba(0, 95, 122, 0) 0%,
+        rgba(0, 0, 0, 0.552) 50%,
         rgba(0, 184, 217, 0) 100%),
       url('Media/80571.jpg');
 
@@ -2417,11 +2421,13 @@ COLLEGES SECTION
 
   .final-cta p {
     color: rgb(255, 255, 255);
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
     margin-bottom: 36px;
     max-width: 780px;
     margin-left: auto;
     margin-right: auto;
+
   }
 
 
@@ -2431,7 +2437,7 @@ COLLEGES SECTION
 
   .footer {
     background: #f5f5f5;
-    padding: 25px 0;
+    padding: 15px 0;
     overflow: hidden;
   }
 
@@ -2447,8 +2453,8 @@ COLLEGES SECTION
   }
 
   .footer-logo img {
-    width: 130%;
-    max-width: 580px;
+    width: 100%;
+    max-width: 380px;
     height: auto;
   }
 
@@ -2480,16 +2486,6 @@ COLLEGES SECTION
   /* ICON */
 
   .icon-box {
-    width: 42px;
-    height: 42px;
-    min-width: 42px;
-
-    border-radius: 12px;
-
-    background: #ffffff;
-
-    border: 1px solid #e4e4e4;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2544,7 +2540,7 @@ COLLEGES SECTION
 
   .footer-social {
     margin-top: 8px;
-    padding-left: 58px;
+    padding-left: 5px;
   }
 
   .follow-heading {
@@ -2568,14 +2564,10 @@ COLLEGES SECTION
   /* SOCIAL BUTTON */
 
   .social-btn {
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
 
-    border-radius: 12px;
 
-    background: #ffffff;
-
-    border: 1px solid #dfdfdf;
 
     display: flex;
     align-items: center;
@@ -2584,7 +2576,7 @@ COLLEGES SECTION
     text-decoration: none;
 
     color: #111111;
-    font-size: 0.95rem;
+    font-size: 1rem;
 
     transition:
       transform 0.3s ease,
@@ -2598,7 +2590,7 @@ COLLEGES SECTION
 
     border-color: #00b4d8;
 
-    color: #00b4d8;
+    color: var(--teal);
 
     box-shadow: 0 10px 20px rgba(0, 180, 216, 0.12);
   }
@@ -2627,7 +2619,7 @@ COLLEGES SECTION
     }
 
     .footer-title {
-      text-align: center;
+      text-align: start;
       font-size: 1.5rem;
     }
 
@@ -2824,7 +2816,7 @@ COLLEGES SECTION
     }
 
     .section-title {
-      font-size: 1.55rem;
+      font-size: 2rem;
     }
 
     .why-card {
@@ -2993,12 +2985,12 @@ COLLEGES SECTION
           <div class="stat-label">Years Course Duration</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">NEET</div>
-          <div class="stat-label">Entrance Exam Required</div>
-        </div>
-        <div class="stat-item">
           <div class="stat-num"><span class="count-up" data-target="50">0</span>%</div>
           <div class="stat-label">Min. PCB Aggregate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">NEET</div>
+          <div class="stat-label">Entrance Exam Required</div>
         </div>
       </div>
     </div>
@@ -3145,7 +3137,7 @@ COLLEGES SECTION
     <div class="syl-header reveal">
       <div class="text-center mb-5 reveal">
         <div class="section-tag">✦ BDS Subjects</div>
-        <h2 class="section-title">BDS <span class="accent-g">Syllabus</span></h2>
+        <h2 class="section-title mb-4">BDS <span class="accent-g">Syllabus</span></h2>
         <p class="section-desc mb-4">The BDS syllabus in India is structured to cover all essential aspects of dental
           health and treatment. The five-year programme includes four years of academic learning followed by a one-year
           compulsory rotatory internship. Given below is a list of BDS course subjects divided on a yearly basis.
@@ -3280,7 +3272,8 @@ COLLEGES SECTION
       <div class="scard scard--wide scard--gold">
         <div class="scard-head">
 
-          <h3 class="scard-title">Compulsory Rotatory Internship</h3>
+          <h3 class="scard-title">Compulsory Rotatory <span
+              style="color: #b87a1a; font-size: 30px; font-weight: 800;">Internship</span></h3>
 
         </div>
         <div class="scard-body">
@@ -3392,7 +3385,7 @@ COLLEGES SECTION
           <!-- <div class="section-tag">✦ Documents Required</div> -->
 
           <h3 class="section-title mb-4 mt-2" style="font-size:1.55rem;">Documents for BDS Admission <span
-              class="accent-g">2025-26</span></h3>
+              class="accent-g">2026-27</span></h3>
           <div class="doc-grid">
             <div class="doc-col">
               <div class="doc-item"><i class="fas fa-circle-dot"></i>Class 10 Marksheet / Certificate (Date of Birth
@@ -3445,7 +3438,7 @@ TOP AYURVEDIC COLLEGES
 
         <div class="section-tag">✦ Colleges</div>
 
-        <h2 class="section-title">
+        <h2 class="section-title mb-4">
           <span class="accent-g">Top Dental Colleges</span> in Karnataka
         </h2>
 
@@ -3475,7 +3468,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3487,7 +3480,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3499,7 +3492,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3510,7 +3503,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3521,7 +3514,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3532,7 +3525,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3543,7 +3536,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3555,7 +3548,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Manipal &amp; Mangalore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3567,7 +3560,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Mangalore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3579,7 +3572,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Mysore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3591,7 +3584,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3603,7 +3596,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Dharwad</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3614,7 +3607,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Mangalore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3626,7 +3619,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Belagavi</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
         <div class="college-row">
@@ -3638,7 +3631,7 @@ TOP AYURVEDIC COLLEGES
               <div class="college-city"><i class="bi bi-geo-alt-fill"></i>Bangalore</div>
             </div>
           </div>
-          <a href="#contact" class="btn-enquire">Enquire Now<i class="bi bi-arrow-right-short"></i></a>
+          <a href="#contact" class="btn-enquire">Enquire Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
 
       </div>
@@ -3743,7 +3736,7 @@ TOP AYURVEDIC COLLEGES
           application support.
         </p>
         <a href="#apply" class="btn-primary-custom mx-auto">
-          <i class="fas fa-rocket"></i> Apply Now
+          Apply Now <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
     </div>
@@ -3843,20 +3836,28 @@ TOP AYURVEDIC COLLEGES
 
               <div class="social-inline">
 
-                <a href="#" class="social-btn">
+                <a href="https://www.facebook.com/bangalorestudy" class="social-btn">
                   <i class="fab fa-facebook-f"></i>
                 </a>
 
-                <a href="#" class="social-btn">
+                <a href="https://instagram.com/bangalorestudy" class="social-btn">
                   <i class="fab fa-instagram"></i>
                 </a>
 
-                <a href="#" class="social-btn">
+                <a href="https://in.linkedin.com/company/learntech-edu-solutions-pvt-ltd" class="social-btn">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
 
-                <a href="#" class="social-btn">
+                <a href="https://www.youtube.com/channel/UCZP40_ivVcdelNOVhmQFr7w" class="social-btn">
                   <i class="fab fa-youtube"></i>
+                </a>
+
+                <a href="https://twitter.com/BangaloreStudy2" class="social-btn">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+
+                <a href="https://in.pinterest.com/bangalorestudy7608/" class="social-btn">
+                  <i class="bi bi-pinterest"></i>
                 </a>
               </div>
             </div>
